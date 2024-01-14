@@ -1,6 +1,6 @@
 // Filter array by type name
-
-Filter = (T, t) => {
+//Step 1: Renaming function
+filterByTyoe = (T, t) => {
   remove = [];
   for (C of T) {
     x = T.indexOf(C);
