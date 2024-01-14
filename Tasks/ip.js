@@ -1,11 +1,11 @@
 // Split string by the first occurrence of separator
-
-Parseip = (i) => {
-  a = [];
-  if (i === '') return;
+// Step 1: renamed variables
+parseip = (input) => {
+  array = [];
+  if (input === '') return;
   else {
-    B = i.split('.');
-    if (B.length != 4) return;
+    arrayOfIpEl = input.split('.');
+    if (arrayOfIpEl.length != 4){return;};
     j = 0;
     for (const b of B) {
       a[j] = parseInt(b);
@@ -13,7 +13,7 @@ Parseip = (i) => {
       j++;
     }
   }
-  return a;
+  return array;
 };
 
-module.exports = Parseip;
+module.exports = parseip;
