@@ -1,15 +1,16 @@
 // Split string by the first occurrence of separator
 // Step 1: renamed variables
-parseip = (input) => {
-  array = [];
-  if (input === '') return;
-  else {
-    arrayOfIpEl = input.split('.');
+// Step 2: added const`s and let
+const parseip = (input) => {
+ let array = [];
+  if (input === ''){ return;
+  }  else {
+  const arrayOfIpEl = input.split('.');
     if (arrayOfIpEl.length != 4){return;};
     j = 0;
     for (const b of B) {
-      a[j] = parseInt(b);
-      if (isNaN(a[j])) return;
+      arrayj] = parseInt(b);
+      if (isNaN(array[j])) return;
       j++;
     }
   }
