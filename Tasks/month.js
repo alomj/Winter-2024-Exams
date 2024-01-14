@@ -1,6 +1,7 @@
 // Get month number
 // Step 1: renamed variables
-months = [
+// Step 2: added const`s and removed useless line
+const months = [
   'jan',
   'feb',
   'mar',
@@ -15,12 +16,13 @@ months = [
   'dec',
 ];
 
-nonthNumber = (givenMonth) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
+
+const monthNumber = (givenMonth) => {
+
+  for (let i = 0; i < months.length; i++) {
     if (givenMonth.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
 
-module.exports = month;
+module.exports = monthNumber;
