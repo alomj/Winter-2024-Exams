@@ -1,21 +1,21 @@
 // Extract substring between prefix and suffix
-
-getvaluebetween = (str, p, s) => {
-  i = str.indexOf(p);
-  if (i === -1) return '';
+// Step 1: Renaming variables
+getValuebetween = (fullString, prefix, suffix) => {
+  index = fullString.indexOf(prefix);
+  if (index === -1) return '';
   else {
-    k = i + p.length;
-    str = str.substring(k);
-    if (s) {
-      i = str.indexOf(s);
-      if (i === -1) {
+    prefixLength = index + prefix.length;
+    fullString = fullString.substring(prefixLengh);
+    if (suffix) {
+      index = fullString.indexOf(suffix);
+      if (index === -1) {
         return '';
       } else {
-        str = str.substring(0, i);
+        fullString = fullString.substring(0, index);
       }
     }
   }
-  return str;
+  return fullstring;
 };
 
-module.exports = getvaluebetween;
+module.exports = getValuebetween;
