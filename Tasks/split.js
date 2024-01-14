@@ -1,10 +1,10 @@
 // Split an array into two parts
-
-let split_Array = (index, array) => {
-  begin = array.slice(0, index);
+// Step 1: Renamed Function and Variables
+let splitArray = (splitIndex, array) => {
+  begin = array.slice(0, splitIndex);
   const len = array.length;
   array = array.slice(index, len);
   return [begin, array];
 };
 
-module.exports = split_Array;
+module.exports = splitArray;
