@@ -1,9 +1,10 @@
 // Filter array by type name
 //Step 1: Renaming function
 //Step 2: Renaming variables
-filterByType = (array, typeName) => {
-  remove = [];
-  for (C of array) {
+//Step 3: Adding const`s and let
+const filterByType = (array, typeName) => {
+  let remove = [];
+  for (const element of array) {
     x = array.indexOf(C);
     if (typeof array[x] !== typeName) {
       remove.unshift(x);
