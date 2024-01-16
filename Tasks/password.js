@@ -4,10 +4,10 @@
 //Step 3: Used addition assignment for better code readability
 const generatePassword = (alphabet, length) => {
   const maxPassLen = alphabet.length;
-  pasw = '';
+  let pasw = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * maxPassLen);
-    pasw += alphabet[Index];
+  const Index = Math.floor(Math.random() * maxPassLen);
+     pasw += alphabet[Index];
   }
   return pasw;
 };
